@@ -6,7 +6,7 @@ A simple blog system
 ## Install
 ```
 $ npm install
-
+$ bower install
 ```
 
 ## Init
