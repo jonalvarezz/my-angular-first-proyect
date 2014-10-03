@@ -1,4 +1,15 @@
-my-angular-first-proyect
+My Angular First Proyect
 ========================
 
-A blog system
+A simple blog system
+
+## Install
+```
+$ npm install
+
+```
+
+## Init
+```
+$ gulp
+```
