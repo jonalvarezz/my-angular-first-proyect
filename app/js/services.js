@@ -3,12 +3,8 @@
 
 	angular.module('blog.services', ['ngResource']);
 
-	var Posts = function($resource, BaseUrl) {
-		return $resource(BaseUrl + '/posts');
-	};
-
 	var Post = function($resource, BaseUrl) {
-		return $resource(BaseUrl + '/post/:postId', { postId: '@_id' });
+		return $resource(BaseUrl + '/posts/:postId', { postId: '@_id' });
 	};
 
 	var Comment = function($resource, BaseUrl) {
@@ -21,7 +17,6 @@
 
 	angular.module('blog.services')
 		.constant('BaseUrl', 'http://jsonplaceholder.typicode.com' )
-		.factory('Posts', Posts)
 		.factory('Post', Post)
 		.factory('Comment', Comment)
 		.factory('User', User);

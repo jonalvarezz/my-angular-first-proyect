@@ -12,15 +12,15 @@
 				controller: 'PostListCtrl',
 				controllerAs: 'postlist'
 			})
-			.when('/post/:postId', {
-				templateUrl: 'views/post-detail.tpl.html',
-				controller: 'PostDetailCtrl',
-				controllerAs: 'postdetail'
-			})
 			.when('/new', {
 				templateUrl: 'views/post-create.tpl.html',
 				controller: 'PostCreateCtrl',
 				controllerAs: 'postcreate'
+			})
+			.when('/post/:postId', {
+				templateUrl: '../views/post-details.tpl.html',
+				controller: 'PostDetailCtrl',
+				controllerAs: 'postdetail'
 			});
 	};
 

@@ -3,8 +3,8 @@
 
 	angular.module('blog.controllers', ['blog.services']);
 
-	var PostListCtrl = function(Posts) {
-		this.posts = Posts.query();
+	var PostListCtrl = function(Post) {
+		this.posts = Post.query();
 	};
 
 	var PostDetailCtrl = function ($routeParams, Post, Comment, User) {

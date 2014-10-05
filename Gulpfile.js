@@ -33,7 +33,7 @@ gulp.task('jshint', function() {
 // Process CSS files and reload the web browser
 gulp.task('css', function() {
 	gulp.src('./app/css/main.styl')
-		.pipe(stylus({ use: nib() }))
+		.pipe(stylus({ use: nib(), compress: true }))
 		.pipe(gulp.dest('./app/css'))
 		.pipe(connect.reload());
 });
